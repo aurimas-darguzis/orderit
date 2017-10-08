@@ -5,12 +5,13 @@ window.onload = function () {
   
   const title = 'Order it!'
   lbl_title.innerHTML = title;
+  sandwitch.innerHTML = 'sandwitch';
 
   sandwitch.onclick = function(e) {
     e.stopPropagation();
     console.log('sandwitch clicked!');
 
-    
+
   }
 
 }
