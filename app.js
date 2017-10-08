@@ -3,7 +3,7 @@ window.onload = function () {
   const lbl_title = document.getElementById('title');
   const sandwitch = document.getElementById('sandwitch');
   const sandwitches = document.getElementById('sandwitches');
-  const sandwitch1 = document.getElementById('sandwitch1');
+  const addSandwitch1 = document.getElementById('sandwitch1');
   const sandwitch2 = document.getElementById('sandwitch2');
   const sandwitch3 = document.getElementById('sandwitch3');
   const totalBasket = document.getElementById('totalBasket');
@@ -18,12 +18,10 @@ window.onload = function () {
     showSandwitches(); // shows list of sandwitches
   }
 
-  sandwitch1.onclick = function(e) {
+  addSandwitch1.onclick = function(e) {
     e.stopPropagation();
-    console.log(e);
-    // console.log(e.dataset.name);
     this.classList.add('selected');
-    // addToBasket(this);
+    addToBasket(this.dataset.name);
   }
 
   sandwitch2.onclick = function(e) {
@@ -42,16 +40,21 @@ window.onload = function () {
     sandwitches.classList.remove('hidden');
   }
 
-  function addToBasket(itemToAdd) {
-    itemToAdd.classList.add('selected');
-    console.log('item to add: ', itemToAdd);
+  function addToBasket(item) {
+    // itemToAdd.classList.add('selected');
+    console.log('item to add: ', item);
 
-    const itemToAdd2 = 'itemInBasket';
-    const item = document.createElement("div");
+    var div = document.createElement('div');
+    div.setAttribute('class', 'totalItem');
+    // div.setAttribute('class', `${item}`);
+    totalBasket.appendChild(div);
+
+    // const itemToAdd2 = 'itemInBasket';
+    // const item = document.createElement("div");
     // item.innerHTML(itemToAdd)
     // item.classList.add(`${itemToAdd2}`)
 
-    totalBasket.insertAdjacentHTML('afterbegin', item);
+    // totalBasket.insertAdjacentHTML('afterbegin', item);
     // const test = '<div>labas</div>';
     // totalBasket.appendChild(item);
     // totalBasket.insertAdjacentHTML('afterbegin', item);
