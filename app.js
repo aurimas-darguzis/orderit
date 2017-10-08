@@ -20,8 +20,10 @@ window.onload = function () {
 
   sandwitch1.onclick = function(e) {
     e.stopPropagation();
+    console.log(e);
+    // console.log(e.dataset.name);
     this.classList.add('selected');
-    addToBasket(this);
+    // addToBasket(this);
   }
 
   sandwitch2.onclick = function(e) {
@@ -40,12 +42,18 @@ window.onload = function () {
     sandwitches.classList.remove('hidden');
   }
 
-  function addToBasket(item) {
-    item.classList.add('selected');
-    totalBasket.insertAdjacentHTML('afterbegin', '<h1>labas</h1>');
+  function addToBasket(itemToAdd) {
+    itemToAdd.classList.add('selected');
+    console.log('item to add: ', itemToAdd);
+
+    const itemToAdd2 = 'itemInBasket';
+    const item = document.createElement("div");
+    // item.innerHTML(itemToAdd)
+    // item.classList.add(`${itemToAdd2}`)
+
+    totalBasket.insertAdjacentHTML('afterbegin', item);
     // const test = '<div>labas</div>';
     // totalBasket.appendChild(item);
     // totalBasket.insertAdjacentHTML('afterbegin', item);
   }
-
 }
