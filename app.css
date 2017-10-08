@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#title {
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  font-size: 4em;
+}
+
+
+/***********/
+/* helpers */
+/***********/
+.font-indie-flower {
+  font-family: 'Indie Flower', cursive;
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-gloria-hallelujah {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.font-source-code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.em4 {
+  font-size: 4em;
+}
