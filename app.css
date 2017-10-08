@@ -43,6 +43,19 @@ body {
   border: 1px dotted;
 }
 
+.sandwitches {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sandwitches > .item {
+  width: 12em;
+  height: 9em;
+  align-self: center;
+  border: 1px solid gold;
+  cursor: pointer;
+}
+
 
 /***********/
 /* helpers */
