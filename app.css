@@ -16,6 +16,20 @@ body {
   font-family: 'Indie Flower', cursive;
   text-align: center;
   font-size: 4em;
+  color: #2b3b96;
+}
+
+#sandwitch {
+  border: 1px solid;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 5%;
+  cursor: pointer;
+}
+
+#sandwitch:hover {
+  border: 2px dotted;
 }
 
 
