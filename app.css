@@ -31,6 +31,14 @@ body {
   color: #ef9494;
 }
 
+#sandwitches {
+  width: 100%;
+  height: 20%;
+  border: 1px solid;
+  position: absolute;
+  top: 200px;
+}
+
 #sandwitch:hover {
   border: 1px dotted;
 }

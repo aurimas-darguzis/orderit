@@ -10,8 +10,12 @@ window.onload = function () {
   sandwitch.onclick = function(e) {
     e.stopPropagation();
     console.log('sandwitch clicked!');
+    showSandwitches();
+  }
 
-
+  function showSandwitches() {
+    const sandwitches = ['chicken', 'grain avocado', 'ham'];
+    
   }
 
 }
