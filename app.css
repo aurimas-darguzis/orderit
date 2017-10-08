@@ -56,10 +56,18 @@ body {
   cursor: pointer;
 }
 
+.sandwitches > .item:hover {
+  color: #69b3b5
+}
 
 /***********/
 /* helpers */
 /***********/
+
+.selected {
+  border-color: red!important;
+}
+
 .font-indie-flower {
   font-family: 'Indie Flower', cursive;
 }
