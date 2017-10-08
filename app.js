@@ -7,6 +7,7 @@ window.onload = function () {
   const sandwitch2 = document.getElementById('sandwitch2');
   const sandwitch3 = document.getElementById('sandwitch3');
   const totalBasket = document.getElementById('totalBasket');
+  const counter = document.getElementById('counter');
 
   const title = 'Order it!'
   lbl_title.innerHTML = title;
@@ -41,8 +42,8 @@ window.onload = function () {
   }
 
   function addToBasket(item) {
+    addToCounter(item);
     // itemToAdd.classList.add('selected');
-    console.log('item to add: ', item);
 
     var div = document.createElement('div');
     div.setAttribute('class', 'totalItem');
@@ -58,5 +59,17 @@ window.onload = function () {
     // const test = '<div>labas</div>';
     // totalBasket.appendChild(item);
     // totalBasket.insertAdjacentHTML('afterbegin', item);
+  }
+
+  const priceList = {
+    sandwitch1: '5'
+  }
+
+  function addToCounter(item) {
+    console.log((`priceList.${sandwitch1}`))
+    let total = 0;
+    total += 5;
+    // console.log(total)
+    counter.innerHTML = `Total: ${total}`;
   }
 }
