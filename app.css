@@ -60,6 +60,19 @@ body {
   color: #69b3b5
 }
 
+#totalBasket {
+  border: 1px solid green;
+  position: absolute;
+  top: 450px;
+  width: 100%;
+  height: 30vh;
+}
+
+.totalBasket {
+  display: flex;
+  justify-content: flex-start;
+}
+
 /***********/
 /* helpers */
 /***********/

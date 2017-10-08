@@ -6,6 +6,7 @@ window.onload = function () {
   const sandwitch1 = document.getElementById('sandwitch1');
   const sandwitch2 = document.getElementById('sandwitch2');
   const sandwitch3 = document.getElementById('sandwitch3');
+  const totalBasket = document.getElementById('totalBasket');
 
   const title = 'Order it!'
   lbl_title.innerHTML = title;
@@ -13,7 +14,7 @@ window.onload = function () {
 
   sandwitch.onclick = function(e) { // label `sandwitch`
     e.stopPropagation();
-    console.log('sandwitch clicked!');
+    console.log('show-sandwitch clicked!');
     showSandwitches(); // shows list of sandwitches
   }
 
@@ -35,19 +36,16 @@ window.onload = function () {
     addToBasket(this);
   }
 
-  sandwitch3.onclick = function(e) {
-    e.stopPropagation();
-  }
-
   function showSandwitches() {
-    // const sandwitches = ['chicken', 'grain avocado', 'ham'];
     sandwitches.classList.remove('hidden');
-    console.log(sandwitches)
-
   }
 
-  function addToBasket(element) {
-    console.log(element);
+  function addToBasket(item) {
+    item.classList.add('selected');
+    totalBasket.insertAdjacentHTML('afterbegin', '<h1>labas</h1>');
+    // const test = '<div>labas</div>';
+    // totalBasket.appendChild(item);
+    // totalBasket.insertAdjacentHTML('afterbegin', item);
   }
 
 }
