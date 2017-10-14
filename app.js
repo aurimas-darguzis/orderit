@@ -69,7 +69,6 @@ window.onload = function () {
     console.log((`priceList.${sandwitch1}`))
     let total = 0;
     total += 5;
-    // console.log(total)
     counter.innerHTML = `Total: ${total}`;
   }
 }
